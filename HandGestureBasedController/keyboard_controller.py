@@ -13,16 +13,20 @@ while 1:
         pyautogui.typewrite(['space'], 0.2)
 
     if 'Rewind' in incoming:
-        pyautogui.hotkey('ctrl', 'left')  
+        #pyautogui.hotkey('ctrl', 'left')
+        pyautogui.press('left')
 
     if 'Forward' in incoming:
-        pyautogui.hotkey('ctrl', 'right') 
+        #pyautogui.hotkey('ctrl', 'right')
+        pyautogui.press('right')
 
     if 'Volume Incresaed' in incoming:
-        pyautogui.hotkey('ctrl', 'down')
+        #pyautogui.hotkey('ctrl', 'down')
+        pyautogui.press('down')
         
 
     if 'Volume Decreased' in incoming:
-        pyautogui.hotkey('ctrl', 'up')
+        #pyautogui.hotkey('ctrl', 'up')
+        pyautogui.press('up');
 
     incoming = "";

@@ -36,7 +36,7 @@ void loop() {
   if((distL>=40 && distR>=40) && (distL<=60 && distR<=60))
   {
     Serial.println("Play/Pause");
-    delay(300);
+    delay(500);
   }
   
   ///// operation 2
@@ -69,7 +69,7 @@ void loop() {
   {
     delay(100);
     distR = getDistance(triggerR, echoR);
-    if(distR<=13 && distR<=17)
+    if(distR>=13 && distR<=17)
     {
       Serial.println("Right Locked");
       while(distR<=40)
